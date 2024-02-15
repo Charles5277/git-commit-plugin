@@ -1,4 +1,4 @@
-# Git Commit Plugin For VS Code
+# Git Commit Plugin with GitMoji For VS Code
 > Automatically generate git commit messages
 
 ![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/devCharles5277.git-commit-plugin-with-gitmoji)
@@ -140,5 +140,8 @@ The plugin will automatically switch the language description based on the `vsco
     ```
 
 ## License
+This project is a modified version of [git-commit-plugin](https://github.com/RedJue/git-commit-plugin).
 
-Released under [MIT](/LICENSE) by [@RedJue](https://github.com/RedJue).
+Original author: [RedJue](https://github.com/RedJue)
+
+Released under [MIT](/LICENSE) by [@Charles5277](https://github.com/Charles5277).

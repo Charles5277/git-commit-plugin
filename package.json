@@ -2,7 +2,7 @@
     "name": "git-commit-plugin-with-gitmoji",
     "displayName": "git-commit-plugin with gitmoji",
     "description": "Automatically generate git commit",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "engines": {
         "vscode": "^1.42.0"
     },

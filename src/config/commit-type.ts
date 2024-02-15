@@ -20,10 +20,16 @@ const CustomCommitType = workspace
 export default function GetCommitTypes() {
     let CommitType: Array<CommitType> = [
         {
-            label: 'init',
-            key: 'init',
-            detail: localize('extension.commitType.init.detail'),
-            icon: '🎉',
+            label: 'merge',
+            key: 'merge',
+            detail: localize('extension.commitType.merge.detail'),
+            icon: '🔀',
+        },
+        {
+            label: 'chore',
+            key: 'chore',
+            detail: localize('extension.commitType.chore.detail'),
+            icon: '🧹',
         },
         {
             label: 'feat',
@@ -35,31 +41,13 @@ export default function GetCommitTypes() {
             label: 'fix',
             key: 'fix',
             detail: localize('extension.commitType.fix.detail'),
-            icon: '🐞',
-        },
-        {
-            label: 'docs',
-            key: 'docs',
-            detail: localize('extension.commitType.docs.detail'),
-            icon: '📃',
-        },
-        {
-            label: 'style',
-            key: 'style',
-            detail: localize('extension.commitType.style.detail'),
-            icon: '🌈',
+            icon: '🐛',
         },
         {
             label: 'refactor',
             key: 'refactor',
             detail: localize('extension.commitType.refactor.detail'),
-            icon: '🦄',
-        },
-        {
-            label: 'perf',
-            key: 'perf',
-            detail: localize('extension.commitType.perf.detail'),
-            icon: '🎈',
+            icon: '🔨',
         },
         {
             label: 'test',
@@ -68,28 +56,52 @@ export default function GetCommitTypes() {
             icon: '🧪',
         },
         {
+            label: 'style',
+            key: 'style',
+            detail: localize('extension.commitType.style.detail'),
+            icon: '🎨',
+        },
+        {
+            label: 'docs',
+            key: 'docs',
+            detail: localize('extension.commitType.docs.detail'),
+            icon: '📝',
+        },
+        {
             label: 'build',
             key: 'build',
             detail: localize('extension.commitType.build.detail'),
-            icon: '🔧',
+            icon: '📦',
         },
         {
-            label: 'ci',
-            key: 'ci',
-            detail: localize('extension.commitType.ci.detail'),
-            icon: '🐎',
+            label: 'deploy',
+            key: 'deploy',
+            detail: localize('extension.commitType.deploy.detail'),
+            icon: '🚀',
         },
         {
-            label: 'chore',
-            key: 'chore',
-            detail: localize('extension.commitType.chore.detail'),
-            icon: '🐳',
+            label: 'hotfix',
+            key: 'hotfix',
+            detail: localize('extension.commitType.hotfix.detail'),
+            icon: '🚑️',
         },
         {
             label: 'revert',
             key: 'revert',
             detail: localize('extension.commitType.revert.detail'),
-            icon: '↩',
+            icon: '⏪️',
+        },
+        {
+            label: 'ci',
+            key: 'ci',
+            detail: localize('extension.commitType.ci.detail'),
+            icon: '👷',
+        },
+        {
+            label: 'init',
+            key: 'init',
+            detail: localize('extension.commitType.init.detail'),
+            icon: '🎉',
         },
     ];
 

@@ -1,14 +1,14 @@
 # Git Commit Plugin For VS Code
 > Automatically generate git commit messages
 
-![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/redjue.git-commit-plugin)
-![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/redjue.git-commit-plugin)
-![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/redjue.git-commit-plugin)
-![Visual Studio Marketplace Rating (Stars)](https://img.shields.io/visual-studio-marketplace/stars/redjue.git-commit-plugin)
-![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/redjue.git-commit-plugin)
-![GitHub contributors](https://img.shields.io/github/contributors/RedJue/git-commit-plugin)
-![GitHub last commit](https://img.shields.io/github/last-commit/RedJue/git-commit-plugin)
-![GitHub](https://img.shields.io/github/license/RedJue/git-commit-plugin?color=green)
+![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/devCharles5277.git-commit-plugin-with-gitmoji)
+![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/devCharles5277.git-commit-plugin-with-gitmoji)
+![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/devCharles5277.git-commit-plugin-with-gitmoji)
+![Visual Studio Marketplace Rating (Stars)](https://img.shields.io/visual-studio-marketplace/stars/devCharles5277.git-commit-plugin-with-gitmoji)
+![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/devCharles5277.git-commit-plugin-with-gitmoji)
+![GitHub contributors](https://img.shields.io/github/contributors/Charles5277/git-commit-plugin-with-gitmoji)
+![GitHub last commit](https://img.shields.io/github/last-commit/Charles5277/git-commit-plugin-with-gitmoji)
+![GitHub](https://img.shields.io/github/license/Charles5277/git-commit-plugin-with-gitmoji?color=green)
 
 
 ## Requirements
@@ -75,9 +75,7 @@ A detailed explanation can be found in this [document](https://docs.google.com/d
 
 1. Install the plugin
 1. Use the command shortcut `showGitCommit` to open the command window or Click the icon on the git plugin navigation bar
-    ![open](/assets/open.gif)
 1. Enter the commit information, which automatically generates a commit message that conforms to the specification
-    ![edit](/assets/edit.gif)
 
 ## Locale Support
 The plugin will automatically switch the language description based on the `vscode` language environment.

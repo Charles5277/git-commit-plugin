@@ -1,25 +1,26 @@
 {
-    "name": "git-commit-plugin",
-    "displayName": "git-commit-plugin",
+    "name": "git-commit-plugin-with-gitmoji",
+    "displayName": "git-commit-plugin with gitmoji",
     "description": "Automatically generate git commit",
-    "version": "1.2.1",
+    "version": "1.0.0",
     "engines": {
         "vscode": "^1.42.0"
     },
-    "publisher": "redjue",
+    "publisher": "devCharles5277",
     "license": "MIT",
-    "homepage": "https://github.com/RedJue/git-commit-plugin/blob/master/README.md",
+    "homepage": "https://github.com/Charles5277/git-commit-plugin-with-gitmoji/blob/main/README.md",
     "bugs": {
         "url": "https://github.com/RedJue/git-commit-plugin/issues"
     },
     "icon": "assets/logo.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/RedJue/git-commit-plugin"
+        "url": "https://github.com/Charles5277/git-commit-plugin-with-gitmoji"
     },
     "keywords": [
         "git",
         "commit",
+        "gitmoji",
         "vscode"
     ],
     "categories": [

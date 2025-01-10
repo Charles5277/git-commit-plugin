@@ -1,121 +1,121 @@
 {
-    "name": "git-commit-plugin-with-gitmoji",
-    "displayName": "git-commit-plugin with gitmoji",
-    "description": "Automatically generate git commit",
-    "version": "1.0.2",
-    "engines": {
-        "vscode": "^1.42.0"
-    },
-    "publisher": "devCharles5277",
-    "license": "MIT",
-    "homepage": "https://github.com/Charles5277/git-commit-plugin-with-gitmoji/blob/main/README.md",
-    "bugs": {
-        "url": "https://github.com/RedJue/git-commit-plugin/issues"
-    },
-    "icon": "assets/logo.png",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Charles5277/git-commit-plugin-with-gitmoji"
-    },
-    "keywords": [
-        "git",
-        "commit",
-        "gitmoji",
-        "vscode"
+  "name": "git-commit-plugin-with-gitmoji",
+  "displayName": "git-commit-plugin with gitmoji",
+  "description": "Automatically generate git commit",
+  "version": "1.1.1",
+  "engines": {
+    "vscode": "^1.42.0"
+  },
+  "publisher": "devCharles5277",
+  "license": "MIT",
+  "homepage": "https://github.com/Charles5277/git-commit-plugin-with-gitmoji/blob/main/README.md",
+  "bugs": {
+    "url": "https://github.com/RedJue/git-commit-plugin/issues"
+  },
+  "icon": "assets/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Charles5277/git-commit-plugin-with-gitmoji"
+  },
+  "keywords": [
+    "git",
+    "commit",
+    "gitmoji",
+    "vscode"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.showGitCommit"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.showGitCommit",
+        "title": "%extension.showGitCommit.title%",
+        "placeholer": "%extension.showGitCommit.placeholder%",
+        "icon": "$(octoface)"
+      }
     ],
-    "categories": [
-        "Other"
-    ],
-    "activationEvents": [
-        "onCommand:extension.showGitCommit"
-    ],
-    "main": "./out/extension.js",
-    "contributes": {
-        "commands": [
-            {
-                "command": "extension.showGitCommit",
-                "title": "%extension.showGitCommit.title%",
-                "placeholer": "%extension.showGitCommit.placeholder%",
-                "icon": "$(octoface)"
-            }
-        ],
-        "configuration": {
-            "type": "object",
-            "title": "Git Commit Plugin",
-            "properties": {
-                "GitCommitPlugin.ShowEmoji": {
-                    "type": "boolean",
-                    "default": true,
-                    "markdownDescription": "%extension.configuration.GitCommitPlugin.ShowEmoji.markdownDescription%"
-                },
-                "GitCommitPlugin.CustomCommitType": {
-                    "type": "array",
-                    "default": [],
-                    "items": {
-                        "type": [
-                            "object",
-                            "string"
-                        ]
-                    },
-                    "markdownDescription": "%extension.configuration.GitCommitPlugin.CustomCommitType.markdownDescription%",
-                    "scope": "resource"
-                },
-                "GitCommitPlugin.MaxSubjectCharacters": {
-                    "type": "number",
-                    "default": 20,
-                    "markdownDescription": "%extension.configuration.GitCommitPlugin.GitCommitPlugin.MaxSubjectCharacters%"
-                },
-                "GitCommitPlugin.Templates": {
-                    "type": "array",
-                    "default": [],
-                    "markdownDescription": "%extension.configuration.GitCommitPlugin.GitCommitPlugin.Templates%",
-                    "items": [
-                        {
-                            "templateName": "Angular",
-                            "templateContent": "<icon><space><type>(<scope>):<space><subject><enter><body><enter><footer>"
-                        },
-                        {
-                            "templateName": "git-cz",
-                            "templateContent": "<type>(<scope>):<space><icon><space><subject><enter><body><enter><footer>"
-                        }
-                    ]
-                }
-            }
+    "configuration": {
+      "type": "object",
+      "title": "Git Commit Plugin",
+      "properties": {
+        "GitCommitPlugin.ShowEmoji": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "%extension.configuration.GitCommitPlugin.ShowEmoji.markdownDescription%"
         },
-        "menus": {
-            "scm/title": [
-                {
-                    "when": "scmProvider == git",
-                    "command": "extension.showGitCommit",
-                    "group": "navigation"
-                }
+        "GitCommitPlugin.CustomCommitType": {
+          "type": "array",
+          "default": [],
+          "items": {
+            "type": [
+              "object",
+              "string"
             ]
+          },
+          "markdownDescription": "%extension.configuration.GitCommitPlugin.CustomCommitType.markdownDescription%",
+          "scope": "resource"
+        },
+        "GitCommitPlugin.MaxSubjectCharacters": {
+          "type": "number",
+          "default": 20,
+          "markdownDescription": "%extension.configuration.GitCommitPlugin.GitCommitPlugin.MaxSubjectCharacters%"
+        },
+        "GitCommitPlugin.Templates": {
+          "type": "array",
+          "default": [],
+          "markdownDescription": "%extension.configuration.GitCommitPlugin.GitCommitPlugin.Templates%",
+          "items": [
+            {
+              "templateName": "Angular",
+              "templateContent": "<icon><space><type>(<scope>):<space><subject><enter><body><enter><footer>"
+            },
+            {
+              "templateName": "git-cz",
+              "templateContent": "<type>(<scope>):<space><icon><space><subject><enter><body><enter><footer>"
+            }
+          ]
         }
+      }
     },
-    "scripts": {
-        "vscode:prepublish": "npm run compile",
-        "compile": "tsc -p ./",
-        "lint": "eslint src --ext ts --fix",
-        "watch": "tsc -watch -p ./",
-        "build": "vsce package",
-        "pretest": "npm run compile && npm run lint",
-        "test": "node ./out/test/runTest.js"
-    },
-    "devDependencies": {
-        "@types/glob": "^7.1.1",
-        "@types/mocha": "^7.0.1",
-        "@types/node": "^12.11.7",
-        "@types/vscode": "^1.42.0",
-        "@typescript-eslint/eslint-plugin": "^2.18.0",
-        "@typescript-eslint/parser": "^2.18.0",
-        "eslint": "^6.8.0",
-        "glob": "^7.1.6",
-        "mocha": "^7.0.1",
-        "typescript": "^3.7.5",
-        "vscode-test": "^1.3.0"
-    },
-    "dependencies": {
-        "vsce": "^1.95.0",
-        "vscode-nls-i18n": "^0.2.4"
+    "menus": {
+      "scm/title": [
+        {
+          "when": "scmProvider == git",
+          "command": "extension.showGitCommit",
+          "group": "navigation"
+        }
+      ]
     }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint src --ext ts --fix",
+    "watch": "tsc -watch -p ./",
+    "build": "vsce package",
+    "pretest": "npm run compile && npm run lint",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/mocha": "^7.0.1",
+    "@types/node": "^12.11.7",
+    "@types/vscode": "^1.42.0",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "eslint": "^6.8.0",
+    "glob": "^7.1.6",
+    "mocha": "^7.0.1",
+    "typescript": "^3.7.5",
+    "vscode-test": "^1.3.0"
+  },
+  "dependencies": {
+    "vsce": "^1.95.0",
+    "vscode-nls-i18n": "^0.2.4"
+  }
 }
